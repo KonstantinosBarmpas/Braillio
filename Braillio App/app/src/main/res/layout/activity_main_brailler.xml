@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    android:orientation="vertical"
+    android:paddingTop="40dp"
+    tools:context="thesonid.com.brailler.MainActivityBraille">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Please enter your board's number:"
+        android:textColor="#E8EAF6"
+        android:textSize="15sp" />
+
+
+    <EditText
+        android:id="@+id/board_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20sp"
+        android:digits="1234567890"
+        android:gravity="center"
+        android:hint="e.g.15"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#E8EAF6" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Please enter board's password"
+        android:textColor="#E8EAF6"
+        android:textSize="15sp" />
+
+
+    <EditText
+        android:id="@+id/board_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20sp"
+        android:gravity="center"
+        android:hint="e.g. 139m-q1"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#E8EAF6" />
+
+    <Button
+        android:id="@+id/log_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:text="Log in" />
+
+    <Button
+        android:id="@+id/set_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:text="Set Up Wifi"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/password_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:text="Change password"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
+
