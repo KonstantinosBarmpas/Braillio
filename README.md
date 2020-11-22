@@ -1,6 +1,6 @@
 # **Braillio - 2nd Year Project**
 
-## 2nd year project at Imperial College London department of Electrical and Electronic Engineering (2018).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
@@ -19,11 +19,19 @@
 ![image1]
 ![image2]
 
-Goal of the project:
+## Summary
 
-The  development  and  design  of  an  electronic  Braille  device  intended  to  aid  in  the education of young visually-impaired children.  The board includes a refreshable electronic Braille display consisting of one large letter followed by four smaller letters, an additional functionality that allows wordsto be added to the database and a speech feature that vocalise’s letters, words and button functions.  The board must be portable, easy to use and cost effective. Different concept generation and selection techniques were discussed showing the team’s thought pro-cesses.  Method matrices are a primary example of some of the techniques used throughout the initial design. There were complications during the process, however working as a team, solutions were created to overcomesuch hurdles.  The project required special planning, therefore management roles and technical parts of therover were allocated to different members in order to split up the work efficiently. Development  goals  were  split  into  subsections  consisting  of  hardware,  digital  hardware  and  softwaredesign.  Thorough research of linear actuators, multiplexing outputs, central processing and power circuitrywas made followed by intricate design and implementation.  Finally, the mechanical design of the board wasrealised and the industrial design, ergonomics and manufacturing conditions reviewed.
+Goal: The  development  and  design  of  an  electronic  Braille  device  intended  to  aid  in  the education of young visually-impaired children.  The board includes a refreshable electronic Braille display consisting of one large letter followed by four smaller letters, an additional functionality that allows wordsto be added to the database and a speech feature that vocalise’s letters, words and button functions.  The board must be portable, easy to use and cost effective. Different concept generation and selection techniques were discussed showing the team’s thought pro-cesses.  Method matrices are a primary example of some of the techniques used throughout the initial design. There were complications during the process, however working as a team, solutions were created to overcomesuch hurdles.  The project required special planning, therefore management roles and technical parts of therover were allocated to different members in order to split up the work efficiently. Development  goals  were  split  into  subsections  consisting  of  hardware,  digital  hardware  and  softwaredesign.  Thorough research of linear actuators, multiplexing outputs, central processing and power circuitrywas made followed by intricate design and implementation.  Finally, the mechanical design of the board wasrealised and the industrial design, ergonomics and manufacturing conditions reviewed.
 
-Raspberry pi:
+## Structure
+
+This repo contains both the Rasberry-Pi code as well as the Android app. 
+
+## Course Description 
+
+"Identify a problem in society and design an engineering solution." [[EE 2nd Year Project-Imperial College London](https://www.imperial.ac.uk/electrical-engineering/study/undergraduate/explore/student-projects/group-projects/)]
+
+## Raspberry pi
 
 The board has two modes ”Letter mode” and ”Word mode” while it also comes with an online and an offline version.  For each mode a different object (Word class and Letter class) is created and used.  If the user changes modes, the previous object is deleted and an object of the new mode is created.  Each object has two important member variables self.stringlist and self.mystring.  The first one contains all the possible letters / words thatthe user can display while the latter determines the letter / word that is being displayed on the board.  When the Raspberry pi powers up the Braille.py file runs and configures the board depending on the internet connectivity.  The Braille.py file consists of two classes (Word and Letter), one main function and three global functions as they are described below.
 
@@ -35,7 +43,7 @@ If  the  board  has  established  an  Internet  connection  the  board  connects
 
 ![image5]
 
-Android app:
+## Android app
 
 A supplementary Android app has been developed to enable users to connect to their board’s database and set new words or remove old ones.  The app requires the board number and the password which the users can changeby clicking on the ”CHANGE PASSWORD” button.  Once successfully logged into their board’s database, a listof all the board’s words will appear.  They can add new words by typing them and clicking ”ADD WORD” orthey can remove existed words by just clicking on the word.  Finally, the users can set up their boards Wi-Fi byenabling their Bluetooth services, clicking on the ”SET UP WIFI” button and typing their SSID and password. The database is configured to ”no authentication” to read data and to ”package and password authentication” to write data on each branch meaning that only the users can write to the database only through the app andwith the right combination of board number and password.
 
